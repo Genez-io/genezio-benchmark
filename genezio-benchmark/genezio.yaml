@@ -1,0 +1,16 @@
+name: genezio-benchmark-us
+region: us-east-1
+yamlVersion: 2
+backend:
+    path: .
+    language:
+        name: js
+    functions:
+        - name: benchmark
+          path: .
+          entry: index.mjs
+          handler: benchmark_handler
+        - name: hello
+          path: .
+          entry: index.mjs
+          handler: hello_handler

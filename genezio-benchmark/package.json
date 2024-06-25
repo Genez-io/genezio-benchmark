@@ -1,13 +1,12 @@
 {
-  "name": "project",
+  "name": "genezio-benchmark",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.mjs",
+  "main": "hello.mjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }

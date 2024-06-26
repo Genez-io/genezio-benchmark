@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # TODO Define the URL
-URL="BENCHMARK_FUNCTION_URL"
+URL="https://7da14e8a-552e-4060-be18-004c08c9a0a1.us-east-1.cloud.genez.io"
 
 # Loop 10 times
-for ((cnt=1; cnt<=10; cnt++))
+for ((cnt=1; cnt<=100; cnt++))
 do
-  # Use wget to fetch the URL and save the output to {cnt}.txt
-  wget -O "${cnt}.txt" "${URL}"
+  curl $URL >> result.txt
+  echo >> result.txt
+  echo "Iteration $cnt"
+  sleep 1
 done
